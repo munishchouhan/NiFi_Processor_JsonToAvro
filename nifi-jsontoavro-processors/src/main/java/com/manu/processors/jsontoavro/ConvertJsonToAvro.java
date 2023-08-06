@@ -37,9 +37,7 @@ import org.apache.nifi.processor.util.StandardValidators;
 import tech.allegro.schema.json2avro.converter.JsonAvroConverter;
 
 import java.io.BufferedInputStream;
-import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -50,7 +48,7 @@ import java.util.Set;
 @CapabilityDescription("This processor convert data from json to avro")
 @ReadsAttributes({@ReadsAttribute(attribute="", description="")})
 @WritesAttributes({@WritesAttribute(attribute="", description="")})
-public class Processor extends AbstractProcessor {
+public class ConvertJsonToAvro extends AbstractProcessor {
 
     public static final PropertyDescriptor SCHEMA= new PropertyDescriptor
             .Builder().name("Avro schema")
