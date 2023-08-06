@@ -5,3 +5,6 @@ Nifi Processor to convert Data from JSON to Avro format
 
 1. mvn clean install
 2. copy nar file from nifi-jsontoavro-nar\target\<filename>.nar to nifi\lib folder
+
+# Library used to convert JSON to AVRO
+https://github.com/allegro/json-avro-converter
